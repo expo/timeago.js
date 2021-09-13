@@ -6,10 +6,8 @@
 import { toDate, formatDiff, diffSec, nextInterval } from '../../src/utils/date';
 import { register, getLocale } from '../../src/register';
 import en_US from '../../src/lang/en_US';
-import zh_CN from '../../src/lang/zh_CN';
 
 register('en_US', en_US);
-register('zh_CN', zh_CN);
 
 describe('date', () => {
   test('toTimestamp', () => {

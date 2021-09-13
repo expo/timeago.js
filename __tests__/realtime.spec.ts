@@ -16,12 +16,10 @@ time2.setAttribute('datetime', now - 20000 + '');
 describe('realtime', () => {
   test('render', async () => {
     render(time1, 'en_US');
-    render(time2, 'zh_CN');
 
     await delay(2500);
 
     expect(time1.innerText).toBe('17 seconds ago');
-    expect(time2.innerText).toBe('22 秒前');
   });
 
   test('cancel', async () => {
@@ -33,6 +31,5 @@ describe('realtime', () => {
     await delay(2500);
 
     expect(time1.innerText).toBe('17 seconds ago');
-    expect(time2.innerText).toBe('22 秒前');
   });
 });

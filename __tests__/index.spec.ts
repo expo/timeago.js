@@ -16,31 +16,7 @@ describe('timeago.js core', () => {
 
   describe('built-in locales', () => {
     test('getLocale', () => {
-      expect(getLocale('zh_CN')).toBeDefined();
       expect(getLocale('en_US')).toBeDefined();
-    });
-
-    test('Locales zh_CN', () => {
-      expect(getLocale('zh_CN')(1, 0)).toEqual(['刚刚', '片刻后']);
-      expect(getLocale('zh_CN')(1, 1)).toEqual(['1 秒前', '1 秒后']);
-
-      expect(getLocale('zh_CN')(1, 2)).toEqual(['1 分钟前', '1 分钟后']);
-      expect(getLocale('zh_CN')(1, 3)).toEqual(['1 分钟前', '1 分钟后']);
-
-      expect(getLocale('zh_CN')(1, 4)).toEqual(['1 小时前', '1 小时后']);
-      expect(getLocale('zh_CN')(1, 5)).toEqual(['1 小时前', '1 小时后']);
-
-      expect(getLocale('zh_CN')(1, 6)).toEqual(['1 天前', '1 天后']);
-      expect(getLocale('zh_CN')(1, 7)).toEqual(['1 天前', '1 天后']);
-
-      expect(getLocale('zh_CN')(1, 8)).toEqual(['1 周前', '1 周后']);
-      expect(getLocale('zh_CN')(1, 9)).toEqual(['1 周前', '1 周后']);
-
-      expect(getLocale('zh_CN')(1, 10)).toEqual(['1 个月前', '1 个月后']);
-      expect(getLocale('zh_CN')(1, 11)).toEqual(['1 个月前', '1 个月后']);
-
-      expect(getLocale('zh_CN')(1, 12)).toEqual(['1 年前', '1 年后']);
-      expect(getLocale('zh_CN')(1, 13)).toEqual(['1 年前', '1 年后']);
     });
 
     test('Locales en_US', () => {
