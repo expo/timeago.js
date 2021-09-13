@@ -1,5 +1,5 @@
 {
-  "name": "timeago.js",
+  "name": "@expo/timeago.js",
   "officialName": "timeago.js",
   "version": "4.0.2",
   "summary": "timeago.js is a simple library (less than 1kb) to used to format datetime with `*** time ago` statement. eg: '3 hours ago'.",
